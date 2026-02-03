@@ -8,4 +8,8 @@ function getComputerChoice() {
         return "scissors";
 }
 
-console.log(getComputerChoice());
+function getHumanChoice() {
+    input = prompt("Please enter Rock, Paper or Scissors: ").toLowerCase()
+    return input;
+}
+
