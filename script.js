@@ -46,11 +46,11 @@ function playRound(humanChoice, computerChoice) {
     }
 
 
-    while (roundCounter < 5) {
+ /*    while (roundCounter < 5) {
         playRound(getHumanChoice(), getComputerChoice());
         ++roundCounter;
         console.log("You: " + humanScore + " ----- Computer: " + computerScore);
-    }
+    } */
 
     if (computerScore > humanScore) {
         console.log("You lost " + humanScore + " to " + computerScore);
