@@ -62,3 +62,8 @@ function playGame() {
 }
 
 /*playGame();  */
+
+let gameButtons = document.querySelector("#gameButtons")
+gameButtons.addEventListener("click", (e) => {
+    console.log(e.target.textContent)
+})
