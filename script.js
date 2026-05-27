@@ -8,14 +8,6 @@ function getComputerChoice() {
         return "scissors";
 }
 
-/* function getHumanChoice() {
-    input = prompt("Please enter Rock, Paper or Scissors: ").toLowerCase()
-    return input;
-} */
-
-
-
-
 let humanScore = 0;
 let computerScore = 0;
 let roundCounter = 0;
@@ -46,13 +38,7 @@ function playRound(humanChoice, computerChoice) {
     }
 
 
- /*    while (roundCounter < 5) {
-        playRound(getHumanChoice(), getComputerChoice());
-        ++roundCounter;
-        console.log("You: " + humanScore + " ----- Computer: " + computerScore);
-    } */
-
-    if (computerScore > humanScore) {
+     if (computerScore > humanScore) {
         console.log("You lost " + humanScore + " to " + computerScore);
     } else if (computerScore < humanScore) {
         console.log("You won " + humanScore + " to " + computerScore);
@@ -60,8 +46,6 @@ function playRound(humanChoice, computerChoice) {
         console.log("It's a tie");
     }
 }
-
-/*playGame();  */
 
 const gameButtons = document.querySelector("#gameButtons")
 gameButtons.addEventListener("click", (e) => {
